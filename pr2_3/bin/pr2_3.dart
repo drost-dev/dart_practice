@@ -1,6 +1,7 @@
 import 'dart:ffi';
 import 'package:pr2_3/pr2_3.dart' as pr2_3;
 import 'dart:io';
+import 'dart:math';
 
 int squaresFromRectangles(int w, int h, int wSquare)
 {
@@ -45,7 +46,7 @@ int notEvenPlaceMult(List <int>nums)
   return notEvenPlaceNumsMult;
 }
 
-void areDigitsDecreasing(int n)
+bool areDigitsDecreasing(int n)
 {
   bool areDecreasing = true;
   for (int i = 0; i < n.toString().length-1; i++)
@@ -56,7 +57,14 @@ void areDigitsDecreasing(int n)
       break;
     }
   }
-  
+  if (areDecreasing)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
 }
 
 void main(List<String> arguments) {
@@ -102,16 +110,26 @@ void main(List<String> arguments) {
   
   /*
   #7
-
+  print(areDigitsDecreasing(99874333321));
   */
-  
-  areDigitsDecreasing(987654123);
 
   /*
   #8
 
   */
   
+  var nums = <int>[];
+  var r = Random();
+  for (int i = 0; i < r.nextInt(25) + 1; i++)
+  {
+    nums.add(24-i*3);
+  }
+
+  for (int i = 0; i < nums.length; i++)
+  {
+    print(nums[i]);
+  }
+
   /*
   #9
 
