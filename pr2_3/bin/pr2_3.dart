@@ -115,9 +115,6 @@ void main(List<String> arguments) {
 
   /*
   #8
-
-  */
-  
   var nums = <int>[];
   var r = Random();
   for (int i = 0; i < r.nextInt(25) + 1; i++)
@@ -129,14 +126,33 @@ void main(List<String> arguments) {
   {
     print(nums[i]);
   }
+  */
 
   /*
   #9
+  var nums = <int>[0, 2, 5, 6, 8, 9, 13, 16, 18, 21, 22, 25, 26, 30];
+  int x = int.parse(stdin.readLineSync() ?? '0');
+  for (int i = 0; i < nums.length; i++)
+  {
+    if (nums[i] == x)
+    {
+      print('Массив содержит число $x');
+      break;
+    }
+  }
 
+  print('Массив не содержит число $x');
   */
-  
+
   /*
   #10
+  var r = Random();
+  var squaresArr = <int>[];
 
+  for (int i = 0; i < r.nextInt(20) + 5; i++)
+  {
+    squaresArr.add(i*i);
+    print(squaresArr[i]);
+  }
   */
 }
