@@ -1,3 +1,7 @@
 {
-    "dart.sdkPath": "D:\\Visual Studio Code Projects\\dart-sdk"
+    "dart.sdkPath": "D:\\Visual Studio Code Projects\\dart-sdk",
+    "vscord.app.name": "Visual Studio Code",
+    "vscord.status.buttons.button1.git.active.enabled": true,
+    "vscord.status.buttons.button1.enabled": false,
+    "vscord.status.buttons.button1.git.active.label": "View Repository"
 }
